@@ -74,11 +74,6 @@ showSlide(slideIndex);
 
 
 
-/*
-inspiration
-https://cz.pinterest.com/pin/830703093790696716/
-*/
-
 var swiper = new Swiper(".swiper", {
     effect: "coverflow",
     grabCursor: true,
@@ -114,4 +109,3 @@ var swiper = new Swiper(".swiper", {
       }
     }
   });
-  
