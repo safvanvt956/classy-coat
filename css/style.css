@@ -184,7 +184,7 @@ header {
     position: relative;
     width: 100%;
     height: 400px; 
-    background-image: url('../img/ab.jpg'); 
+    background-image: url('../img/d3a535ebb6b9aa1e3667f84f5670fe3d.jpeg'); 
     background-size: cover;
     background-position: center;
     border-radius: 25px; 
@@ -313,10 +313,11 @@ header {
 
 .service-item {
     border-radius: 8px;
-    padding: 20px;
+    padding: 30px;
     width: calc(33.333% - 40px);
     box-sizing: border-box;
     transition: transform 0.3s ease;
+    text-align: start;
 }
 
 
