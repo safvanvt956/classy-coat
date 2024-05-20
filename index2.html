@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhance Your Lives, Elevate Spaces</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar sticky-navbar">
+            <div class="logo">
+                <img src="img/logo/Logo copy 1.png" alt="Logo">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="javascript:void(0)">Home</a></li>
+                <li><a href="javascript:void(0)">About</a></li>
+                <li><a href="javascript:void(0)">Reviews</a></li>
+                <li><a href="javascript:void(0)">Gallery</a></li>
+                <li><a href="javascript:void(0)">Contact</a></li>
+            </ul>
+            <div class="cta">
+                <a href="javascript:void(0)" class="btn">Get a Quote</a>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <!-- ========== Home ========== -->
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Enhance Your Lives, Elevate Spaces.</h1>
+            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <a href="#learn-more" class="btn">Learn More</a>
+            <div class="stats">
+                <div class="stat">
+                    <h2>400+</h2>
+                    <h5>Project Completions</h5>
+                </div>
+                <div class="stat">
+                    <h2>600+</h2>
+                    <h5>Satisfied Clients</h5>
+                </div>
+                <div class="stat">
+                    <h2>100+</h2>
+                    <h5>Unique Styles</h5>
+                </div>
+            </div>
+        </div>
+        <div class="hero-images">
+            <img src="img/home6.png" alt="Interior Design 1">
+            <img class="design" src="img/home5.png" alt="Interior Design 2">
+        </div>
+    </section>
+
+    <!-- ========== Slider Gallery========== -->
+
+    <section id="gallery" class="gallery">
+        <div class="slider">
+            <div class="slides">
+                <img src="img/hom1.jpg" alt="Gallery Image 1" class="slide">
+                <img src="img/hom2.jpg" alt="Gallery Image 2" class="slide">
+                <img src="img/hom3.jpg" alt="Gallery Image 3" class="slide">
+                <img src="img/hom1.jpg" alt="Gallery Image 1" class="slide">
+                <img src="img/hom2.jpg" alt="Gallery Image 2" class="slide">
+                <img src="img/hom3.jpg" alt="Gallery Image 3" class="slide">
+            </div>
+            <div class="navigation">
+                <button class="nav-button" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="nav-button" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== About ========== -->
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="text">
+                <h3>About Us</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+
+            </div>
+            <div class="image">
+                <img src="img/about1.png" alt="About Us Image">
+            </div>            
+        </div> 
+        <section id="hero-section" class="hero-section">
+            <div class="overlay">
+                <div class="content">
+                    <h1>Lorem Ipsum is simply dummy</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p> 
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+            </div>
+        </section>      
+    </section>
+
+
+<!-- ========== Swiper Gallery ========== -->
+
+
+
+    <!-- ========== Services ========== -->
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-item">
+                <img src="img/Interior design icon-1.png" alt="Interior Design Icon">
+                <h3>Interior Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+            </div>
+            <div class="service-item">
+                <img src="img/Lighting design icon-1.png" alt="Lighting Design Icon">
+                <h3>Lighting Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+            </div>
+            <div class="service-item">
+                <img src="img/Outdoor design icon.png" alt="Outdoor Design Icon">
+                <h3>Outdoor Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+            </div>
+            <div class="service-item">
+                <img src="img/Interior design icon-1.png" alt="Wall Painting Icon">
+                <h3>Wall Painting</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+            </div>
+            <div class="service-item">
+                <img src="img/Lighting design icon-1.png" alt="Flooring Icon">
+                <h3>Flooring</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+            </div>
+        </div>
+    </section>
+
+  
+<!-- ========== Testimonials ========== -->
+
+<section id="testimonials" class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials-container">
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <div class="testimonial-text">
+                    <span class="stars">★★★★★</span>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="img/Profile.png" alt="Author Image">
+                    <p>Stella</p>
+                </div>
+            </div>
+            <div class="testimonial-image">
+                <img src="img/testimonial.jpg" alt="Testimonial Image">
+            </div>
+        </div>
+        <div class="testimonial-navigation">
+            <button class="prev">&#8592;</button>
+            <button class="next">&#8594;</button>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- ========== Contact ========== -->
+
+
+<div class="contact-container">
+    <div class="image-section">
+        <img class="image" src="img/hom2.jpg" alt="Main Image">
+        <img class="overlay-image" src="luca-bravo-h-fz-io-d-0-f-i-8-unsplash-10.png" alt="">
+    </div>
+    <div class="form-section">
+        <div class="form-background">
+            <div class="form-content">
+                <h2 class="contact-title">Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="full-name">Full Name*</label>
+                        <input type="text" id="full-name" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile*</label>
+                        <input type="tel" id="mobile" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-input"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">Send Enquiry</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- =========== Footer =========== -->
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-container">
+            <img src="img/logo/Logo copy 1.png" alt="Logo" class="footer-logo">
+            <input type="text" placeholder="Enter your email address" class="footer-input"><button>Subscribe</button>
+        </div>
+        <div class="footer-display">
+            <div class="footer-logo-section">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter fa-2xl" style="color: #ffffff;"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-section">
+                <h3>Connect</h3>
+                <p>info@classycoat.com</p>
+                <div class="footer-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096474!2d144.95373631531674!3d-37.81627917975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d9eade12a35a!2sVictoria%2C%20Australia!5e0!3m2!1sen!2sus!4v1614300830047!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer-bottom">
+        <p>All rights reserved &copy; Classy Coat UAE</p>
+    </div>
+</footer>
+
+
+<script src="js/scripts.js"></script>
+<script>
+    document.getElementById('mobile-menu').addEventListener('click', function() {
+        var navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+
+</body>
+</html>
