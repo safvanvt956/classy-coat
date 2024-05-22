@@ -84,7 +84,8 @@ header {
 .hero-content h1 {
     font-size: 50px;
     margin-bottom: 20px;
-    color: #4b3005 !important;
+    color: #843F0F;
+    font-weight: 590;
 }
 
 .hero-content p {
@@ -161,11 +162,11 @@ header {
 
 .text h3{
     font-size: 50px;
-    color: #4b3005;
+    color: #843F0F;
 }
 
 .text p{
-    color: gray;
+    color: 5F5F5F;
     line-height: 2rem;
 }
 
@@ -250,7 +251,8 @@ header {
 
 .slider img{
     border-radius: 15px;
-    height: 70vh;
+    height: 65vh;
+    object-fit: cover;
 }
 
 .navigation {
@@ -268,6 +270,7 @@ header {
     color: white;
     padding: 10px;
     cursor: pointer;
+    display: none;
 }
 
 .dots {
@@ -290,7 +293,6 @@ header {
 }
 
 
-
 /* --------- Services Section ---------- */
 .services {
     padding: 60px 20px;
@@ -301,6 +303,7 @@ header {
     font-size: 2em;
     margin-bottom: 40px;
     color: #734E35; 
+    text-align: start;
 }
 
 
@@ -447,7 +450,7 @@ header {
   
   .swiper {
     width: 100%;
-    padding: 60px 0 95px 0;
+    padding: 30px 0 35px 0;
   }
   
   .swiper-slide {
@@ -475,45 +478,29 @@ header {
   }
 
   .Gallery-test h3{
-    font-size: 50px;
-    color: #4b3005;
-    text-align: center;
+    font-size: 40px;
+    color: #843F0F;
+    
 }
-  
-  .swiper-button-prev,
-  .swiper-button-next {
-    background: white;
+
+  .gallery-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+}
+
+.gallery-navigation button {
+    background-color: #A0522D;
+    border: 2px solid #A0522D;
+    color: #fff;
     border-radius: 50%;
-    top: 47%;
     width: 50px;
     height: 50px;
-    box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
-    display: none;
-  
-    @media (min-width: 760px) {
-      display: flex;
-    }
-  }
-  
-  .swiper-button-prev {
-    left: -30px;
-  }
-  
-  .swiper-button-next {
-    right: -30px;
-  }
-  
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    font-size: 1.4rem;
-    content: "";
-  }
-  
-  .swiper-button-prev svg,
-  .swiper-button-next svg {
-    width: 25px;
-  }
-  
+    font-size: 25px;
+    margin: 0 10px; 
+    cursor: pointer;
+}
 
  /* ------------- Contact up ----------- */
   
@@ -669,13 +656,18 @@ header {
         align-items: center;
         gap: 20px;
     }
-
+    
     .hero-images img {
         width: 100%;
     }
     .hero-images .design {
         position: relative;
         right: 0;
+    }
+    .hero-images .arrow {
+        bottom: -200px !important;
+        left: 70px;
+        display: none;
     }
 
     .stats {
@@ -767,7 +759,11 @@ header {
         border-radius: 5px;
         margin: 5px 0;
     }
-    
+    .hero-images .arrow {
+        bottom: -200px !important;
+        left: 70px;
+        display: none;
+    }
 }
 
 @media (max-width: 743px) {
@@ -1158,7 +1154,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 
 
 .navbar-nav .nav-item2 #fsd{
-    background: #c9710c;
+    background: #843F0F;
     color: #ffffff !important;
     margin: 15px;
     padding: 7px 25px;
@@ -1194,6 +1190,15 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     padding: 100px 100px !important;
 }
 
+.hero-images .arrow {
+    width: 70px;
+    z-index: 1;
+    position: absolute;
+    bottom: 40%;
+    /* bottom: 33%; */
+    transform: translateX(100%);
+    cursor: pointer;
+}
 
 @media (max-width: 600px) {
     .service-item {
