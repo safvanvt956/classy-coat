@@ -32,83 +32,6 @@ function showSlides(n) {
 }
 
 
-// let slideIndex = 0;
-
-function showSlide(index) {
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.dot');
-
-    if (index >= slides.length) {
-        slideIndex = 0;
-    } else if (index < 0) {
-        slideIndex = slides.length - 1;
-    } else {
-        slideIndex = index;
-    }
-
-    // Hide all slides
-    slides.forEach(slide => {
-        slide.style.display = 'none';
-    });
-
-    // Remove active class from all dots
-    dots.forEach(dot => {
-        dot.classList.remove('active');
-    });
-
-    // Show the current slide and add active class to the corresponding dot
-    slides[slideIndex].style.display = 'block';
-    dots[slideIndex].classList.add('active');
-}
-
-function moveSlide(n) {
-    showSlide(slideIndex + n);
-}
-
-function currentSlide(n) {
-    showSlide(n - 1);
-}
-
-// Initialize the slider
-showSlide(slideIndex);
-
-
-
-// var swiper = new Swiper(".swiper", {
-//     effect: "coverflow",
-//     grabCursor: true,
-//     centeredSlides: true,
-//     coverflowEffect: {
-//       rotate: 0,
-//       stretch: 0,
-//       depth: 100,
-//       modifier: 4,
-//       slideShadows: true
-//     },
-//     loop: true,
-//     // Navigation arrows
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev"
-//     },
-//     keyboard: {
-//       enabled: true
-//     },
-//     mousewheel: {
-//       thresholdDelta: 70
-//     },
-//     breakpoints: {
-//       560: {
-//         slidesPerView: 2.5
-//       },
-//       768: {
-//         slidesPerView: 3
-//       },
-//       1024: {
-//         slidesPerView: 3
-//       }
-//     }
-//   });
 
 
 var swiper = new Swiper(".swiper", {
@@ -145,6 +68,34 @@ var swiper = new Swiper(".swiper", {
       slidesPerView: 3
     }
   }
+});
+
+
+const testimonials = [
+  {
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "Jane Doe",
+      image: "img/user1.jpg"
+  },
+  {
+      text: "Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.",
+      name: "Emily Johnson",
+      image: "img/user1.jpg"
+  },
+  {
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      image: "img/user1.jpg"
+  },
+  
+];
+
+let currentTestimonial = 0;
+
+document.getElementById('testimonial-section').addEventListener('click', function() {
+  currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+  document.getElementById('testimonial-text').innerText = testimonials[currentTestimonial].text;
+  document.getElementById('user-name').innerText = testimonials[currentTestimonial].name;
+  document.getElementById('user-image').src = testimonials[currentTestimonial].image;
 });
 
   
