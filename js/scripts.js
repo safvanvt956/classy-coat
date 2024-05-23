@@ -78,12 +78,13 @@ const testimonials = [
       image: "img/user1.jpg"
   },
   {
-      text: "Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.",
-      name: "Emily Johnson",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+      name: "Doe",
       image: "img/user1.jpg"
   },
   {
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.incididunt ut labore et dolore magna aliqua.",
+      name: "Janaid",
       image: "img/user1.jpg"
   },
   
